@@ -1,0 +1,456 @@
+body {
+	background: black;
+	background-image: url("../fondo.png");
+  background-repeat: no-repeat;
+    background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: #9b9b9b;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%)  translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);	
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  color: #fff;
+  background: rgba(255, 125, 125, 1);
+}
+
+::-moz-selection {
+  color: #fff;
+  background: rgba(255, 125, 125, 1);
+}
+
+.card {
+  background: #fcfcfc;
+  width: 700px;
+  height: 500px;
+  box-shadow: 0 20px 40px #c5c5c5;
+  display: flex;
+  justify-content: left;
+  align-items: center; 
+}
+
+.menu-container {
+  background: #ffffff;
+  width: 90px;
+  height: 100%;
+  border: 1px solid #dfdfdf;
+  position: relative;
+}
+
+.menu-button {
+  width: 100%;
+  height: 50px; 
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.menu-button:first-child {
+  margin-top: 30px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.button .fas {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.menu-text {
+  display: none;
+  width: 60px;
+  background: #808080;
+  position: absolute;
+  left: 70px;
+  color: #fff;
+}
+
+.button:hover .menu-text {
+  display: block;
+}
+
+.button:hover .fas {
+  color: #ff7f7f;
+}
+
+.active {
+  color: #ff7f7f;
+}
+
+.social-media {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+.social-media a{
+  color: #9b9b9b;
+}
+
+.content-container {
+  width: 608px;
+  height: 100%;
+  display: none;
+}
+
+#home {
+  display: block;
+}
+
+.introduction-container {
+  height: 80px;
+  padding: 25px;
+  background: #dfdfdf;
+  background-image: url("https://zupimages.net/up/20/03/t18f.jpg");
+  background-position: center center;
+ background-size: 1000px;
+  border-bottom: 4px solid #ff7f7f;
+}
+
+.intro-frame {
+  background: rgba(255,255,255,0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.intro-quote {
+  width: 160px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.intro-quote::before {
+  content:"“";
+  display: block;
+  font-family: 'Ibarra Real Nova', serif;
+  width: 150px;
+  font-size: 60px;
+  height: 10px;
+  color: #ff7f7f;
+}
+
+.intro-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+  border: 1px solid #dfdfdf;
+  margin: 4px 15px;
+}
+
+.intro-icon img {
+  width: 60px;
+  border-radius: 100%;
+}
+
+.intro-info {
+  width: 296px;
+}
+
+.intro-name {
+  color: #ff7f7f;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #dfdfdf;
+  margin: 15px 40px 0 0;
+  padding-bottom: 10px;
+}
+
+.intro-name .fas {
+  font-size: 14px;
+  color: #9b9b9b;
+  margin-right: 5px;
+}
+
+.intro-tags {
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+.intro-tags .fas {
+  color: #ff7f7f;
+  padding-left: 2px;
+}
+
+.introduction-main {
+  height: 152px;
+  padding: 40px 55px;
+}
+
+.introduction-footer {
+  height: 80px;
+  padding: 25px;
+  background: #dfdfdf;
+  background-image: url("https://zupimages.net/up/20/03/t18f.jpg");
+  background-position: center bottom;
+ background-size: 1000px;
+  border-top: 4px solid #ff7f7f;
+}
+
+.ult {
+  width: 100%;
+  height: 166px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.ult-id {
+  width: 170px;
+  height: 120px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.ult-id:nth-child(2) {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.ult-id img {
+  width: 80px;
+}
+
+.ult-id img:first-child {
+  margin-right: 10px;
+}
+
+.ult-name {
+  font-size: 24px;
+  display: inline-block;
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight: bold;
+  width: 100px;
+  position: relative;
+  color: #3e3e3e;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.ult-name::before {
+  content:" ";
+  display: block;
+  width: 100px;
+  height: 10px;
+  background: rgba(255, 125, 125, 0.3);
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transition: 1s;
+}
+
+.ult-name:hover::before {
+  right: 90px;
+}
+
+.ult-id:nth-child(2) .ult-name:hover::before {
+  right: -90px;
+}
+
+.ult-info {
+  width: 340px;
+  height: 120px;
+}
+
+.ult-tag {
+  display: inline-block;
+  width: 100px;
+  height: 15px;
+  padding: 2px 0;
+  background: #808080;
+  color: #fff;
+  text-align: center;
+  margin-right: 7px;
+}
+
+.ult-tag:last-child {
+  width: 16px;
+  margin-right: 0;
+  padding: 2px 1px 2px 2px;
+}
+
+.quote {
+  margin: 10px 0;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+.quote::before {
+  content: "“ ";
+  font-size: 40px;
+  position: absolute;
+  top:-5px;
+  left: 0;
+}
+
+.ult-img {
+  width: 100%;
+  height: 61px;
+}
+
+.groups-container, .music-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.groups-stanlist, .groups-tostan, .info-music {
+  height: 100%;
+  width: 304px;
+}
+
+.title-groups, .title-music {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Ibarra Real Nova', serif;
+  margin: 30px;
+}
+
+.group-list {
+  margin: 10px 30px;
+  height: 220px;
+}
+
+.group {
+  height: 33px;
+  padding-top: 3px;
+  border-bottom: 1px solid rgba(255, 125, 125, 0.3);
+}
+
+.group:last-child {
+  border:none;
+}
+
+.group-name {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#victon {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  width: 50px;
+  z-index: 3;
+  overflow: hidden;
+}
+
+#victon::before {
+  content:" ";
+  display: block;
+  width: 100px;
+  height: 6px;
+  background: rgba(255, 125, 125, 0.3);
+  position: absolute;
+  right: 0;
+  bottom: 02px;
+  z-index: -1;
+  transition: 1s;
+}
+
+#victon:hover::before {
+  right: 40px;
+}
+
+.group .fas {
+  font-size: 10px;
+  padding: 0 4px;
+}
+
+.group-list li {
+  text-align: center;
+}
+
+.group-image {
+  background: powderblue;
+  margin: 30px 30px;
+  height: 125px;
+}
+
+.music-list {
+  padding: 20px 30px;
+}
+
+.group-list ul, .music-list ul {
+  padding: 0;
+}
+
+.group-list li, .music-list li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+.music-list li:nth-child(even) {
+  text-align: right;
+}
+
+.music-list a {
+  color: rgba(255, 125, 125, 0.5);
+  transition: 0.5s;
+}
+
+.music-list a:hover {
+  color: rgba(255, 125, 125, 1);
+}
+
+.photo-music {
+  height: 100%;
+  width: 304px;
+  background: #fff;
+  background-image: url('https://zupimages.net/up/20/03/r79l.jpg');
+  background-position: 570px center;
+  background-size: cover;
+}
+
+.photo-cadre {
+  margin: 60px;
+  background: rgba(255,255,255,0.5);
+  width: 142px;
+  height: 378px;
+  padding: 0 20px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-style: italic; 
+}

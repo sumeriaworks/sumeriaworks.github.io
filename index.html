@@ -1,1 +1,71 @@
-"Hello World" 
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SUMERIA</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+ <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86"> 
+  <link rel="stylesheet" href="styles.css">
+<link  rel="stylesheet"  href="https://unpkg.com/xp.css">
+</head>
+
+<body>
+
+<div class="window" id="ventana" style="width: 400px">
+  <div class="title-bar" id="drag">
+    <div class="title-bar-text">Sumeria</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <menu role="tablist">
+      <button aria-selected="true" aria-controls="music">Seleccion</button>
+    </menu>
+    <article role="tabpanel" id="music">
+        <fieldset>
+          <legend>Elegi tu Sumeria:</legend>
+       
+        <section class="field-row">
+          <button onclick="window.location.href='works/index.html';">Works</button>
+          <label>Audio, Video, Disco.</label>
+        </section>
+        <section class="field-row">
+          <button onclick="window.location.href='proximamente/index.html';">OOC</button>
+          <label>Proximamente.</label>
+        </section>
+        </fieldset>
+      </article>
+
+    <section class="field-row" style="justify-content: flex-end">
+      <button>OK</button>
+      <button>Cancel</button>
+    </section>
+  </div>
+</div>
+<div class="window">
+  <div class="title-bar">
+    <div class="title-bar-text">Command Prompt</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <pre>Sumeria&#10094;R&#10095; SumDOS 
+&#10094;C&#10095; Copyright Sumeria Works 1990-2020.
+      <br>C:&#92;SUMERIA&#92;SYSTEM32>select.exe
+    </pre>
+  </div>
+</div>
+  <script src="scripts.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</body>
+</html>
